@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App font-poppins max-w-[900px] h-full mx-auto">
       <Callout status={"seeking front-end & software engineering internships for summer 2023!"}
-        emoji='⚠️'
+        icon='⚠️'
         label='alert'
       />
     </div>
