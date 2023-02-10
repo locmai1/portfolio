@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Callout from './components/Callout';
+import Emoji from './components/Emoji';
+// import logo from './logo.svg';
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header font-poppins">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App font-poppins max-w-[900px] h-full mx-auto">
+      <Callout emoji={<Emoji symbol='⚠️' label='alert'/>} status={"seeking front-end & software engineering internships for summer 2023!"}/>
     </div>
   );
 }
