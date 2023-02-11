@@ -11,7 +11,7 @@ const About = ({
     <div className="flex flex-col justify-between w-full h-[350px] max-h-[350px]">
       <span className="text-5xl font-bold lg:my-7 my-3">About Me</span>
       <div className="flex flex-row h-full w-full justify-between my-auto">
-        <div className="w-full lg:w-[600px] h-[280px] lg:h-full text-base lg:text-base my-3">
+        <div className="w-full sm:w-3/5 lg:w-[600px] h-[280px] lg:h-full text-base lg:text-base my-3">
           <p className="mb-5">
             I am a currently a sophomore at Tufts University pursuing a Bachelors in Computer Science. 
             My interests at the moment lie in fullstack development and automation 
@@ -24,7 +24,7 @@ const About = ({
             Check out what I’ve done below!
           </p>
         </div>
-        <img className="w-[200px] h-[200px] top-0 hidden lg:block" 
+        <img className="w-[200px] h-[200px] top-0 hidden sm:block my-8 md:my-0" 
           src={icon} 
           alt='profile-icon' 
           width={200} 
