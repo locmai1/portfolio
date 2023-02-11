@@ -3,6 +3,7 @@ import Link from './components/Link';
 import Callout from './components/Callout';
 import Header from './components/Header';
 import About from './components/About';
+import TabView from './components/TabView';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -10,9 +11,9 @@ function App() {
   return (
     <div className="font-poppins max-w-[900px] h-full mx-auto px-5">
       <Header icon='icons/1.png' title='Loc Mai' />
-      <Callout icon='⚠️' label='alert' status="seeking front-end & software engineering internships for summer 2023!" />
+      <Callout icon='⚠️' label='icon-alert' status="seeking front-end & software engineering internships for summer 2023!" />
       <hr className="h-px my-5 bg-[#787774] border-0" />
-      <div className='w-full flex flex-row'>
+      <div className='w-full flex flex-row lg:text-base text-sm'>
         <Link icon='💼' label='nav-linkedin' to='/' shortcut='LinkedIn' />
         <Link icon='🧑🏻‍💻' label='nav-github' to='/' shortcut='GitHub' />
         <Link icon='📬' label='nav-email' to='/' shortcut='Email' />
@@ -20,6 +21,27 @@ function App() {
       </div>
       <hr className="h-px my-5 bg-[#787774] border-0" />
       <About icon='icons/2.png'/>
+      <hr className="h-px my-5 bg-[#787774] border-0" />
+      <TabView tabs={[
+        { 
+          icon: '🤵🏻', 
+          label: 'icon-work', 
+          name: 'Work', 
+          content: <div>work</div> 
+        },
+        { 
+          icon: '📟', 
+          label: 'icon-project', 
+          name: 'Project', 
+          content: <div>project</div> 
+        },
+        { 
+          icon: '📚', 
+          label: 'icon-stack', 
+          name: 'Stack', 
+          content: <div>stack</div> 
+        },
+      ]} />
     </div>
   );
 }

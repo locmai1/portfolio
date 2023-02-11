@@ -1,0 +1,50 @@
+import React, { useState } from 'react'
+import Emoji from './Emoji';
+
+type TabProps = {
+  icon: string;
+  label: string;
+  name: string;
+  content: JSX.Element;
+}
+
+type Tabs = {
+  tabs: TabProps[];
+}
+
+const TabView = ({
+  tabs
+}: Tabs) => {
+  // const [allTabs, setAllTabs] = useState(tabs)
+  const [activeTabIndex, setActiveTabIndex] = useState<number>(0)
+
+  const activateTab = (index: number) => {
+    setActiveTabIndex(index);
+  }
+
+  return (
+    <div className='flex flex-col w-full mx-auto h-[600px]'>
+      <div className='flex flex-row mx-auto mb-5'>
+        {tabs.map((tab, index) => (
+          <label className=''
+            key={index}
+            onClick={() => activateTab(index)}
+          >
+            <div className='hover:bg-[#eeeeee] text-[#787774] rounded-md cursor-pointer py-2 px-2 lg:px-3 mx-2 lg:mx-3'>
+              <Emoji symbol={tab.icon} label={tab.label} size='lg'/>
+              <span className='ml-1 text-base lg:text-lg font-medium'>{tab.name}</span>
+            </div>
+            {index === activeTabIndex && 
+              <hr className="h-[2px] mt-2 lg:mt-1 mx-2 lg:mx-3 bg-[#787774] border-0 rounded-full" />
+            }
+          </label>
+        ))}
+      </div>
+      <div className='w-full h-full mx-auto bg-slate-100'>
+        {tabs[activeTabIndex].content}
+      </div>
+    </div>
+  )
+}
+
+export default TabView;
