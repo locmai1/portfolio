@@ -24,13 +24,13 @@ const TabView = ({
 
   return (
     <div className='flex flex-col w-full mx-auto h-[600px]'>
-      <div className='flex flex-row mx-auto mb-5'>
+      <div className='flex flex-row mx-auto mt-1'>
         {tabs.map((tab, index) => (
           <label className=''
             key={index}
             onClick={() => activateTab(index)}
           >
-            <div className='hover:bg-[#eeeeee] text-[#787774] rounded-md cursor-pointer py-2 px-2 lg:px-3 mx-2 lg:mx-3'>
+            <div className='hover:bg-[#eeeeee] text-[#787774] rounded-md cursor-pointer py-1 lg:py-2 px-2 lg:px-3 mx-2 lg:mx-3'>
               <Emoji symbol={tab.icon} label={tab.label} size='lg'/>
               <span className='ml-1 text-base lg:text-lg font-medium'>{tab.name}</span>
             </div>
@@ -40,7 +40,8 @@ const TabView = ({
           </label>
         ))}
       </div>
-      <div className='w-full h-full mx-auto bg-slate-100'>
+      <hr className="h-px my-5 bg-[#787774] border-0" />
+      <div className='w-full h-full mx-auto'>
         {tabs[activeTabIndex].content}
       </div>
     </div>
