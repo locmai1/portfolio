@@ -23,7 +23,7 @@ const TabView = ({
   }
 
   return (
-    <div className='flex flex-col w-full mx-auto h-[700px]'>
+    <div className='flex flex-col w-full mx-auto h-[600px]'>
       <div className='flex flex-row mx-auto mt-1'>
         {tabs.map((tab, index) => (
           <label className=''
