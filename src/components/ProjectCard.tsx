@@ -5,6 +5,8 @@ type ProjectCardProps = {
   title: string;
   description: string;
   stack: StackTagProps[];
+  repo: string;
+  demo: string;
 }
 
 type StackTagProps = {
@@ -17,7 +19,9 @@ type StackTagProps = {
 const ProjectCard = ({
   title,
   description,
-  stack
+  stack,
+  repo,
+  demo
 }: ProjectCardProps) => {
   return (
     <div className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] flex flex-row rounded-2xl w-full h-full bg-white'>
@@ -36,18 +40,28 @@ const ProjectCard = ({
           </div>
         </div>
         <div className='flex flex-row text-sm items-center h-[40px] w-full mt-7'>
-          <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[40px] items-center flex'>
-            <img className='m-auto'
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
-              alt=''
-              width={25}
-              height={25}>
-            </img> 
+          <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[40px]'>
+            <a className='h-[40px] w-[40px] items-center flex' 
+              href={repo}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <img className='m-auto'
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
+                alt='icon-github'
+                width={25}
+                height={25}>
+              </img> 
+            </a>
           </button>
-          <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[100px] ml-[11px] text-[16px] font-semibold flex text-center'>
-            <div className='text-center m-auto'>
+          <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[80px] ml-[11px] text-[16px] font-semibold flex text-center'>
+            <a className='text-center m-auto'
+              href={demo}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               Demo
-            </div>
+            </a>
           </button> 
         </div>
       </div>

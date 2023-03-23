@@ -13,6 +13,8 @@ const Projects = () => {
           { 'name': 'NodeJS', 'text': '#336633', 'background': '#66cc33', 'width': 65 },
           { 'name': 'Express', 'text': '#5A5A5A', 'background': '#D3D3D3', 'width': 65 }
         ]}
+        repo="https://github.com/locmai1/lifx-spotify-show"
+        demo="https://github.com/locmai1/lifx-spotify-show"
       />
       <ProjectCard 
         title="LIFX Audio Show" 
@@ -21,6 +23,8 @@ const Projects = () => {
           { 'name': 'Python', 'text': '#0d1c4d', 'background': '#2463f2', 'width': 60 },
 
         ]}
+        repo="https://github.com/locmai1/lifx-audio-show"
+        demo="https://github.com/locmai1/lifx-audio-show"
       />
       <ProjectCard 
         title="Portfolio" 
@@ -30,6 +34,8 @@ const Projects = () => {
           { 'name': 'Typescript', 'text': '#0d1c4d', 'background': '#007acc', 'width': 85 },
           { 'name': 'TailwindCSS', 'text': '#264de4', 'background': '#79c2fa', 'width': 95 },
         ]}
+        repo="https://github.com/locmai1/portfolio"
+        demo="https://locmai1.github.io/"
       />
       {/* <ProjectCard 
         title="ReserveTufts" 
