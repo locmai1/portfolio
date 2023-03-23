@@ -17,7 +17,13 @@ const Link = ({
   return (
       <div className='flex flex-row underline w-1/4 text-[#787774] justify-center'>
         <Emoji symbol={icon} label={label} size='lg' />
-        <a className='ml-1 leading-7' href={to}>{shortcut}</a>
+        <a className='ml-1 leading-7' 
+          href={to}
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          {shortcut}
+        </a>
       </div>
   )
 }

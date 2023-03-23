@@ -1,5 +1,5 @@
 import React from 'react'
-import StackCard from './StackCard'
+import StackCard from '../components/StackCard'
 
 const Stack = () => {
   return (

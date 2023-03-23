@@ -1,15 +1,15 @@
 import React from "react";
 // import Emoji from "./Emoji";
 
-type HeaderProps = {
+type TitleProps = {
   icon: string;
   title: string;
 }
 
-const Header = ({
+const Title = ({
   icon,
   title
-}: HeaderProps) => {
+}: TitleProps) => {
   return (
     <div className="flex flex-col w-[181px] max-w-[900px] mt-[100px]">
       <div className="inline-block decoration-none align-text-bottom m-auto text-[3rem] mb-[1rem]">
@@ -22,4 +22,4 @@ const Header = ({
   )
 }
 
-export default Header;
+export default Title;

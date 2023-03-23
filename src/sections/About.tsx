@@ -1,12 +1,6 @@
 import React from "react";
 
-type AboutProps = {
-  icon: string;
-}
-
-const About = ({
-  icon
-}: AboutProps) => {
+const About = () => {
   return (
     <div className="flex flex-col justify-between w-full h-[400px] lg:h-[325px] max-h-[400px]">
       <span className="text-5xl font-bold lg:my-7 my-3">About Me</span>
@@ -25,7 +19,7 @@ const About = ({
           </p>
         </div>
         <img className="w-[200px] h-[200px] top-0 hidden sm:block my-8 md:my-0" 
-          src={icon} 
+          src='/icons/2.png'
           alt='profile-icon' 
           width={200} 
           height={200}>
