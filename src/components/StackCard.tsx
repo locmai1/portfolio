@@ -18,7 +18,7 @@ const StackCard = ({
         height={size}
         alt={caption}
       />
-      <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex flex-end justify-center items-end text-lg pb-4 md:pb-1.5 text-black font-semibold">
+      <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex flex-end justify-center items-end text-sm pb-4 md:pb-1 text-black font-semibold">
         {caption}
       </div>     
     </div>
