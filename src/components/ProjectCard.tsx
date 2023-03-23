@@ -21,7 +21,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] flex flex-row rounded-2xl w-full h-full bg-white'>
-      <div className='w-full h-full rounded-2xl p-8 flex flex-col'>
+      <div className='w-full h-full rounded-2xl p-6 flex flex-col'>
         <div className='h-[200px] md:h-[172px] w-full'>
           <div className='text-3xl font-bold'>
             {title}
@@ -35,7 +35,7 @@ const ProjectCard = ({
             {description}
           </div>
         </div>
-        <div className='flex flex-row text-sm items-center h-[40px] w-full mt-3.5'>
+        <div className='flex flex-row text-sm items-center h-[40px] w-full mt-7'>
           <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[40px] items-center flex'>
             <img className='m-auto'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
