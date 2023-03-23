@@ -35,7 +35,7 @@ const Projects = () => {
           { 'name': 'TailwindCSS', 'text': '#264de4', 'background': '#79c2fa', 'width': 95 },
         ]}
         repo="https://github.com/locmai1/portfolio"
-        demo="https://locmai1.github.io/"
+        demo="https://portfolio-locmai1.vercel.app/"
       />
       {/* <ProjectCard 
         title="ReserveTufts" 
