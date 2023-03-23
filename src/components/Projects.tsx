@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="grid grod-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 w-full h-[1300px] md:h-full gap-5 items-center justify-center">
       <ProjectCard 
         title="LIFX Spotify Show" 
-        description="A web app built with Pug.js utilizing SpotifyOAuth and Spotify Web API to fetch user's currently playing track and visualize properties onto a LIFX lightbulb."
+        description="A web app built with Pug.js and a NodeJS backend utilizing SpotifyOAuth and Spotify Web API to fetch user's currently playing track and visualize properties onto a LIFX lightbulb."
         stack={[
           { 'name': 'HTML', 'text': '#412d23', 'background': '#f06529', 'width': 50 },
           { 'name': 'CSS', 'text': '#264de4', 'background': '#74bce9', 'width': 35 },
@@ -16,7 +16,7 @@ const Projects = () => {
       />
       <ProjectCard 
         title="LIFX Audio Show" 
-        description="A PyQtGraph GUI to retrieve computer audio input using PyAudio and dynamically animate input onto LIFX lightbulbs. Features full control of LIFX lightbulbs status and properties."
+        description="A PyQtGraph GUI to retrieve computer audio input using PyAudio and dynamically animate input onto LIFX lightbulbs through Fast Fourier Transformation. Features full control of LIFX lightbulbs status and properties."
         stack={[
           { 'name': 'Python', 'text': '#0d1c4d', 'background': '#2463f2', 'width': 60 },
 

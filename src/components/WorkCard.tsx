@@ -26,7 +26,7 @@ const WorkCard = ({
           >
             {/* Company Name */}
           </div>
-          <img className="absolute drop-shadow-[0_0_6px_rgba(0,0,0,0.25)] rounded-full h-[60px] w-[60px] bg-white top-[30px] left-[180px]"
+          <img className="absolute drop-shadow-[0_0_6px_rgba(0,0,0,0.25)] rounded-full h-[60px] w-[60px] bg-white top-[30px] left-[170px] md:left-[180px]"
             src={`${logo}`}
             alt={`${caption}`}
             width={80}
