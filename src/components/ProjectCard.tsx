@@ -41,7 +41,7 @@ const ProjectCard = ({
         </div>
         <div className='flex flex-row text-sm items-center h-[40px] w-full mt-7'>
           <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[40px]'>
-            <a className='h-[40px] w-[40px] items-center flex' 
+            <a className='h-full w-full items-center flex justify-center' 
               href={repo}
               target="_blank" 
               rel="noopener noreferrer"
@@ -55,7 +55,7 @@ const ProjectCard = ({
             </a>
           </button>
           <button className='drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] bg-white rounded-lg h-[40px] w-[80px] ml-[11px] text-[16px] font-semibold flex text-center'>
-            <a className='text-center m-auto'
+            <a className='text-center m-auto w-full h-full flex items-center justify-center'
               href={demo}
               target="_blank" 
               rel="noopener noreferrer"
