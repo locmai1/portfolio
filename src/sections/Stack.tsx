@@ -3,7 +3,7 @@ import StackCard from '../components/StackCard'
 
 const Stack = () => {
   return (
-    <div className='grid grid-cols-2 grid-rows-8 md:grid-cols-7 md:grid-rows-4 w-full h-full md:h-[500px] gap-5 items-center justify-center'>
+    <div className='grid grid-cols-3 grid-rows-8 md:grid-cols-7 md:grid-rows-4 w-full h-full md:h-[500px] gap-5 items-center justify-center'>
       <StackCard 
         icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'}
         caption={'React'}
